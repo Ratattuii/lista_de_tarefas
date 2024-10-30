@@ -58,7 +58,7 @@ app.delete('/tarefas/:id', (req, res) => {
   });
 });
 
-const PORTA = 3000;
+const PORTA = process.env.PORT || 3000;
 app.listen(PORTA, () => {
   console.log(`Servidor rodando na porta ${PORTA}`);
 });
